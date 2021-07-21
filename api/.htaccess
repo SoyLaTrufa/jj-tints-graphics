@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+    Options +FollowSymlinks
+    RewriteBase /api/
+	
+	# Obtiene la propiedad de un objeto al obtenerlo por ID
+	#
+	# Formato de la URL:
+	# {modelo}/id/{nombre_de_la_propiedad}
+
+	RewriteRule ^([a-z_]+)/(id)/([^/]+)/([^/]+)/?$  test.php?m=$1&f[$2]=$3&p=$4 [QSA,L]
+
+
+	# Obtiene un objeto según los filtros pasados
+	#
+	# Formato de la URL:
+	# {modelo}/{nombre_filtro}/{valor_filtro}
+	# {modelo}/{nombre_filtro}/{valor_filtro}/{nombre_filtro}/{valor_filtro}
+	# {modelo}/{nombre_filtro}/{valor_filtro}/{nombre_filtro}/{valor_filtro}/... etc
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([a-z_]+)/([^/]+)/?$                                        test.php?m=$1&f[$2]                      [QSA,L]
+	RewriteRule ^([a-z_]+)/([^/]+)/([^/]+)/?$                                test.php?m=$1&f[$2]=$3                   [QSA,L]
+	RewriteRule ^([a-z_]+)/([^/]+)/([^/]+)/([^/]+)/?$                        test.php?m=$1&f[$2]=$3&f[$4]             [QSA,L]
+	RewriteRule ^([a-z_]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$                test.php?m=$1&f[$2]=$3&f[$4]=$5          [QSA,L]
+	RewriteRule ^([a-z_]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?         test.php?m=$1&f[$2]=$3&f[$4]=$5&f[$6]    [QSA,L]
+	RewriteRule ^([a-z_]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/? test.php?m=$1&f[$2]=$3&f[$4]=$5&f[$6]=$7 [QSA,L]
+
+
+</IfModule>

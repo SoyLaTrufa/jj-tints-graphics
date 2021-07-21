@@ -1,0 +1,125 @@
+.s_contacto
+	.contacto
+		.cont-1170
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			h2
+				font-size: 18px
+				padding-left: 40px
+				padding-top: 80px
+			.mod
+				display: flex
+				justify-content: space-between
+				width: 100%
+				@media(max-width: 800px)
+					flex-direction: column
+				.left
+					width: 65%
+					padding: 40px
+					@media(max-width: 800px)
+						width: 100%
+						padding: 5px
+					form
+						.modd
+							width: 100%
+							.mensaje
+								align-items: flex-start !important
+								@media(max-width: 800px)
+									align-items: center !important
+							.btnss
+								float: right
+								margin-top: 20px
+								@media(max-width: 800px)
+									float: unset
+								button	
+									background: $rojo
+									color: #fff
+									font-size: 22px
+									@extend %bebas
+									border: 0
+									outline: 0
+									cursor: pointer
+									padding: 5px 15px
+									@media(max-width: 800px)
+										width: 100%
+							.content-form
+								display: flex
+								align-items: center
+								justify-content: space-between
+								margin: 10px 0
+								@media(max-width: 800px)
+									flex-direction: column
+								input
+									max-width: 430px
+									width: 100%
+									margin-left: 20px
+									padding-left: 10px
+									border: 2px solid #dedede
+									border-radius: 3px
+									@media(max-width: 800px)
+										margin: 0
+								textarea
+									max-width: 430px
+									width: 100%
+									margin-left: 20px
+									padding-left: 10px
+									border: 2px solid #dedede
+									border-radius: 3px
+									height: 120px
+									@media(max-width: 800px)
+										margin: 0
+				.right
+					width: 35%
+					padding: 40px
+					flex-direction: column
+					display: flex
+					align-items: flex-start
+					@media(max-width: 800px)
+						width: 100%
+						padding: 5px
+						padding-bottom: 60px
+						padding-top: 40px
+					a
+						text-decoration: none
+						color: $negro
+						margin-bottom: 15px
+						i 
+							color: $rojo
+							font-size: 18px
+							margin-right: 5px
+					.rrss
+						display: flex
+						margin-top: 30px
+						@media(max-width: 800px)
+							width: 100%
+							justify-content: center
+						a
+							text-decoration: none
+							background: $rojo
+							margin: 0 10px
+							// padding: 10px 
+							height: 40px
+							width: 40px
+							border-radius: 50%
+							display: flex
+							align-items: center
+							justify-content: center
+							i 
+								color: $blanco
+								font-size: 20px
+								margin: 0
+	.banda-gris
+		padding: 70px 0
+		background: #323232
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		z-index: 3
+		h2
+			color: $blanco
+			@extend %bebas
+			padding-top: 10px
+			text-transform: uppercase
+			font-size: 24px

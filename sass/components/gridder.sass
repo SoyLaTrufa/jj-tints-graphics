@@ -1,0 +1,122 @@
+// main: ../main.sass
+
+.gridder
+	text-align: center
+	background: #fff
+	margin: 0
+	border-top: 3px solid #fff
+	font-size: 0
+	.gridder-list
+		display: inline-block
+		width: 25%
+		vertical-align: top
+		cursor: pointer
+		position: relative
+		list-style-type: none
+		background: #56606A
+		height: 490px
+		text-align: left
+		border-bottom: 3px solid #fff
+		border-right: 3px solid #fff
+		.icon-plus-circled
+			display: none
+		img
+			width: 100%
+			margin-bottom: 20px
+		h4
+			padding-left: 20px
+			padding-right: 5px
+		p
+			padding: 0 20px
+			font-size: 16px
+	.gridder-list.selectedItem
+		background: red
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-left: 26px solid transparent
+			border-right: 26px solid transparent
+			border-top: 25px solid red
+			position: absolute
+			left: calc(50% - 26px)
+			bottom: -24px
+			z-index: 50
+
+.gridder-content
+	display: none
+
+.gridder-show
+	padding: 4%
+	background: gray
+	position: relative
+	display: block
+	float: left
+	width: 100%
+	text-align: left
+	color: #CCC
+
+.gridder-contenido
+	span
+		color: red
+		font-size: 24px
+		font-weight: 300
+		width: 329px
+		display: block
+	ul
+		list-style-type: none
+		li
+			position: relative
+			padding-left: 30px
+			color: #2d2d2d
+			font-size: 17px
+			font-weight: 400
+
+#list-4
+	border-right: none
+
+@media(max-width: 1599px) 
+	.gridder
+		.gridder-list
+			height: 460px
+
+@media(max-width: 1199px)
+	.gridder-contenido
+		span
+			width: auto
+
+@media(max-width: 991px) 
+	.gridder
+		.gridder-list
+			height: 535px
+
+@media(max-width: 767px)
+	.gridder
+		.gridder-list
+			width: 50%
+			height: 470px
+	.gridder-contenido
+		span
+			margin-bottom: 25px
+			
+	#list-2
+		border-right: none
+
+@media(max-width: 479px)
+	.gridder
+		.gridder-list
+			width: 100%
+			height: auto
+			border-right: none
+			.icon-plus-circled
+				display: block
+				color: #fff
+				font-size: 30px
+				padding-left: 20px
+				&:before
+					margin: 0 0 20px
+					text-align: left
+	.gridder-show
+		padding: 10% 4%
+
+

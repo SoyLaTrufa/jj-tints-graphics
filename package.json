@@ -1,0 +1,26 @@
+{
+  "name": "base-synapsis",
+  "version": "1.0.0",
+  "description": "Sitio web institucional",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Synapsis CI",
+  "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "relaxed-json": "^1.0.3",
+    "vinyl-ftp": "^0.6.0"
+  },
+  "dependencies": {}
+}

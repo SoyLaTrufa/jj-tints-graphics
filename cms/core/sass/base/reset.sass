@@ -1,0 +1,94 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Nunito', sans-serif;
+  ::-webkit-scrollbar
+    width: 15px
+  ::-webkit-scrollbar-track
+    background: #fff
+  ::-webkit-scrollbar-thumb
+    background: #252a30
+    -webkit-border-radius: 4px
+main
+  margin-top: 76px
+  @media(max-width: 480px)
+    margin-top: 69px
+ul
+  list-style: none
+a
+  text-decoration: none
+  &:hover, &:focus
+    text-decoration: none
+  @extend %animacion-suave
+
+.clear 
+  clear: both
+
+/* Animación suave */
+%animacion-suave 
+  -webkit-transition: all .35s ease-in-out
+  -moz-transition: all .35s ease-in-out
+  -o-transition: all .35s ease-in-out
+  -ms-transition: all .35s ease-in-out
+  transition: all .35s ease-in-out
+
+%animacion-nav
+  -webkit-transition: all .55s ease-in-out
+  -moz-transition: all .55s ease-in-out
+  -o-transition: all .55s ease-in-out
+  -ms-transition: all .55s ease-in-out
+  transition: all .55s ease-in-out
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+// Placeholder Color
+
+@mixin placeholder-color($color) 
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color  
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color  
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color  
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color  
+
+      /* Animación suave */
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+div[class^='cont-'], div[class*=' cont-']
+  width: 100% 
+  margin: 0 auto
+  padding: 0  15px
+
+.cont-1300 
+  max-width:  1300px 
+.cont-1170 
+  max-width:  1170px 
+.cont-990 
+  max-width:  990px 
+.cont-975 
+  max-width:  975px 
+.cont-768 
+  max-width:  768px 
+.cont-550 
+  max-width:  550px 
+
+// Mixin de contenedores de anchos especificos (wrappers)
+@mixin cont($ancho)
+  .cont-#{$ancho}
+    max-width: $ancho

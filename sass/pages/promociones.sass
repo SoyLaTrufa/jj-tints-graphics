@@ -1,0 +1,49 @@
+.s_promociones
+	.promociones
+		background: $gris
+		padding-bottom: 80px
+		padding-top: 80px
+		.cont-1170
+			ul
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				li
+					margin-bottom: 20px
+					p
+						font-size: 16px
+					.box
+						display: flex
+						max-width: 360px
+						flex-direction: column
+						width: 100%
+						text-decoration: none
+						img
+							width: 100%
+						&:hover
+							p
+								background: $rojo
+							img
+								filter: contrast(1.2) saturate(1.35)
+						p
+							background: $negro
+							padding: 13px 19px
+							@extend %animacion-suave
+							color: $blanco
+							font-size: 24px
+							@extend %bebas
+							text-transform: uppercase
+	.banda-roja
+		padding: 70px 0
+		background: $rojo
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		z-index: 3
+		h2
+			color: $blanco
+			@extend %bebas
+			padding-top: 10px
+			text-transform: uppercase
+			font-size: 24px

@@ -1,0 +1,159 @@
+.s_cms
+	.wrap-logueado
+		#content
+			#box
+				form
+					fieldset
+						border-color: $verde
+						padding: 0 5px
+						margin-bottom: 25px
+						legend
+							color: $azul-dark
+							font-weight: 600
+						.campos
+							padding: 5px 25px 5px 5px
+							label
+								width: 100%
+								font-size: 14px
+								font-weight: 600
+							input
+								width: 100%
+								height: 30px
+								padding-left: 5px
+								border: solid 1px $azul
+								outline: none
+								&:focus
+									border-color: $verde !important
+							textarea
+								display: block
+								width: 100%
+								padding-left: 5px
+								border: solid 1px $azul
+								outline: none
+								&:focus
+									border-color: $verde !important
+							input[type="checkbox"]
+								width: 12px
+								height: 12px
+							.qq-upload-button
+								background: $celeste
+								border: solid 1px $celeste
+								color: $negro
+								font-weight: 700
+								cursor: pointer
+								width: 120px !important
+								@extend %animacion-suave
+								&:hover
+									background: $verde-dark
+							.form__comentario
+								font-size: 13px
+								padding: 10px 0
+								color: $negro
+							select
+								display: block
+								border-color: $azul
+								outline: none
+								&:focus
+									border-color: $verde !important
+							.gallery 
+								.boton
+									box-shadow: none
+									outline: none
+									background: $celeste
+									border: solid 1px $celeste
+									color: $blanco
+									padding: 5px 16px
+									cursor: pointer
+									@extend %animacion-suave
+									&:hover
+										background: transparent
+										color: $celeste
+						.form__full
+							width: 100%
+						.form-half
+							width: 50%
+							margin: 10px 0
+							display: inline-block
+							vertical-align: top
+							@media(max-width: 940px)
+								width: 100%
+						.form-third
+							width: 33%
+							display: inline-block
+							vertical-align: top
+							margin: 10px 0
+							@media(max-width: 725px)
+								width: 100%
+						.form-quarter
+							width: 25%
+							display: inline-block
+							vertical-align: top
+							margin: 10px 0
+							@media(max-width: 870px)
+								width: 50%
+							@media(max-width: 600px)
+								width: 100%
+						.form__titulo
+							font-size: 21px
+							font-weight: 700
+							padding: 45px 0 10px
+							margin-bottom: 15px
+							position: relative
+							&:after
+								position: absolute
+								bottom: -10px
+								left: 0
+								content: '...............................................................'
+								font-weight: 400
+								color: $gris
+						.block
+							display: block !important
+						.mce-tinymce
+							background: $gris-dark
+							button
+								span
+									color: $blanco
+									text-shadow: none
+								i
+									border-top-color: $blanco
+									text-shadow: none
+								&:hover
+									span
+										color: $gris-dark
+									i
+										border-top-color: $gris-dark
+							.mce-toolbar-grp
+								background: $gris
+								.mce-btn
+									background: $gris-dark
+									button[role='presentation']
+										opacity: 1
+									i
+										text-shadow: none
+										color: $blanco
+							.mce-container-body
+								background: $negro-selected
+								.mce-wordcount
+									display: none
+								.mce-path-item
+									font-size: 0
+					.form__botones
+						input
+							box-shadow: none
+							outline: none
+							background: $verde
+							border: solid 1px $verde
+							color: $negro
+							font-weight: 700
+							padding: 5px 16px
+							cursor: pointer
+							@extend %animacion-suave
+							&:hover
+								background: transparent
+						#button2
+							background: #d32822
+							border-color: #d32822
+							color: $blanco
+							&:hover
+								color: #d32822
+								background: transparent

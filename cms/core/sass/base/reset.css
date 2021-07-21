@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+* ::-webkit-scrollbar {
+  width: 15px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: #252a30;
+  -webkit-border-radius: 4px;
+}
+
+main {
+  margin-top: 76px;
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-top: 69px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Animación suave */
+a {
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel {
+  display: block;
+}
+
+.owl-carousel li:not(:first-child) {
+  display: none;
+}
+
+.owl-carousel.owl-loaded li:not(:first-child) {
+  display: block;
+}
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel {
+  display: block;
+}
+
+.owl-carousel li:not(:first-child) {
+  display: none;
+}
+
+.owl-carousel.owl-loaded li:not(:first-child) {
+  display: block;
+}
+
+div[class^='cont-'], div[class*=' cont-'] {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0  15px;
+}
+
+.cont-1300 {
+  max-width: 1300px;
+}
+
+.cont-1170 {
+  max-width: 1170px;
+}
+
+.cont-990 {
+  max-width: 990px;
+}
+
+.cont-975 {
+  max-width: 975px;
+}
+
+.cont-768 {
+  max-width: 768px;
+}
+
+.cont-550 {
+  max-width: 550px;
+}
+/*# sourceMappingURL=reset.css.map */

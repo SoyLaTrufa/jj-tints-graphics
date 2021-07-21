@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AASA,AAAA,aAAa,CAAC,IAAI,CAAC;EACjB,WAAW,EAAE,0BAA0B;CAAG;;AAa5C,UAAU;EACN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,0CAA0C,CAAC,eAAe,EAAE,yCAAyC,CAAC,cAAc;EACzH,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;;;AAEtB,UAAU;EACN,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,+CAA+C,CAAC,eAAe,EAAE,8CAA8C,CAAC,cAAc;EACnI,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM",
+    "sources": [
+        "typography.sass"
+    ],
+    "names": [],
+    "file": "typography.css"
+}

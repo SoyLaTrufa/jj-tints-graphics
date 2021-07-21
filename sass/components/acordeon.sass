@@ -1,0 +1,50 @@
+// main: ../main.sass
+
+.faq
+  padding: 65px 0
+.lista-faq
+  counter-reset: faq
+  li 
+    border: solid 1px blue
+    margin-bottom: 15px
+    padding: 18px 15px 18px 60px
+    .js-pregunta
+      position: relative
+      cursor: pointer
+      margin: 0
+      padding-right: 25px
+      .flecha
+        position: absolute
+        right: 0
+        top: 3px
+        color: blue
+        -ms-transform: rotate(180deg)
+        -webkit-transform: rotate(180deg)
+        transform: rotate(180deg)
+        @extend %animacion-suave
+      &:before 
+        counter-increment: faq 
+        position: absolute
+        content: counter(faq)
+        left: -45px
+        top: -5px
+        width: 35px
+        height: 35px
+        line-height: 35px
+        font-size: 24px
+        color: #fff
+        border-radius: 50%
+        background: blue
+        text-align: center
+    .js-respuesta
+      margin-top: 15px 
+      img 
+        display: block
+        margin: 0 auto
+        max-width: 100%
+    &.activo
+      .js-pregunta .flecha
+        -ms-transform: rotate(-45deg)
+        -webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+    

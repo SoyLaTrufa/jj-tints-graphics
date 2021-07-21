@@ -1,0 +1,327 @@
+.s_home
+	.video-cont
+		position: relative
+		z-index: 3
+		height: 910px
+		width: 100%
+		overflow: hidden
+		background-color: $negro
+		@media(min-width: 1600px)
+			height: 785px
+		@media(max-width: 1366px)
+			height: 663px
+		@media(max-width: 640px)
+			height: 300px
+		&:after
+			content: ''
+			background: #000
+			opacity: 0.4
+			position: absolute
+			width: 100%
+			height: 100%
+		.video
+			min-width: 100%
+			top: -150px
+			width: 100%	
+			min-height: 100%
+			position: absolute
+			// left: -150px
+			@media(min-width: 1920px)
+				left: 0
+			@media(min-width: 1600px)
+				top: 0
+			@media(max-width: 1440px)
+				top: 0 
+			// @media(min-width: 1280px)
+			// 	top: -186px
+			// @media(min-width: 1200px)
+			// 	top: -143px
+			@media(max-width: 460px)
+				left: -113px
+				width: 165%
+				top: 15px
+			@media(max-width: 360px)
+				// left: 0
+
+	.productos
+		background: #070707
+		padding-top: 20px
+		position: relative
+		z-index: 2
+		.raya
+			position: absolute
+			top: 100px
+			right: 0
+			width: 50px
+			@media(max-width: 1600px)
+				width: 40px
+			@media(max-width: 1366px)
+				width: 25px
+			@media(max-width: 800px)
+				width: 20px
+		.rayas
+			position: absolute
+			top: -150px
+			left: 0
+			width: 50px
+			z-index: 1
+			transform: rotate(180deg)
+			@media(max-width: 1600px)
+				width: 40px
+			@media(max-width: 1366px)
+				width: 25px
+				top: -80px
+			@media(max-width: 800px)
+				display: none
+		h1
+			font-size: 32px
+			text-align: center
+			color: $blanco
+			@extend %eth
+			padding-top: 60px
+			padding-bottom: 20px
+			@media(max-width: 768px)
+				font-size: 20px
+		h2
+			font-size: 40px
+			text-align: center
+			color: $blanco
+			@extend %eth
+			padding-bottom: 70px
+			@media(max-width: 768px)
+				font-size: 30px
+			span
+				color: $rojo
+		.cont-1300
+			display: flex
+			flex-wrap: wrap
+			max-width: 100%
+			padding: 0
+			@media(max-width: 768px)
+				flex-direction: column
+			.box
+				width: 25%
+				position: relative
+				@media(max-width: 768px)
+					width: 100%
+				&:after
+					content: ''
+					width: 100%
+					height: 100%
+					background: rgba($rojo ,0.7)
+					@extend %animacion-suave
+				&:hover
+					img
+						filter: contrast(1.2) saturate(1.35)
+					span
+						background: $rojo
+						i
+							font-size: 55px
+					.negro
+						background: $negro
+
+				img
+					width: 100%
+					@extend %animacion-suave
+				.negro
+					background: rgba($negro ,0.7)
+				span
+					width: 100%
+					// height: 170px
+					@extend %animacion-suave
+					position: absolute
+					background: rgba($rojo ,0.7)
+					bottom: 0
+					z-index: 99
+					padding: 20px 20px
+					display: flex
+					align-items: center
+					justify-content: space-between
+					p 
+						font-size: 20px
+						line-height: 23px
+						width: 295px
+						@extend %eth
+						color: $blanco
+						margin: 0
+						text-transform: uppercase
+					i
+						color: $blanco
+						font-size: 50px
+						@extend %animacion-suave
+	.servicios
+		background: #070707
+		padding-bottom: 110px
+		position: relative
+		.raya
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 50px
+			@media(max-width: 1600px)
+				width: 40px
+			@media(max-width: 1366px)
+				width: 25px
+		.rayas
+			position: absolute
+			top: -150px
+			left: 0
+			width: 50px
+			z-index: 1
+			transform: rotate(180deg)
+			@media(max-width: 1600px)
+				width: 40px
+			@media(max-width: 1366px)
+				width: 25px
+				top: -80px
+		h1
+			font-size: 32px
+			text-align: center
+			color: $blanco
+			@extend %eth
+			padding-top: 60px
+			padding-bottom: 20px
+			@media(max-width: 768px)
+				font-size: 20px
+		h2
+			font-size: 40px
+			text-align: center
+			color: $blanco
+			@extend %eth
+			padding-bottom: 40px
+			@media(max-width: 768px)
+				font-size: 30px
+			span
+				color: $rojo
+		.cont-1300
+			display: flex
+			justify-content: space-between
+			padding: 0
+			@media(max-width: 768px)
+				flex-direction: column
+			.box
+				// width: 33.33%
+				position: relative
+				width: 100%
+				text-decoration: none
+				&:hover
+					span
+						background: rgba($negro ,0.9)
+						h3
+							color: $rojo
+						p
+							color: $rojo
+						.red
+							opacity: 1
+							display: block
+						.white
+							display: none
+				@media(max-width: 768px)
+					.serv
+						width: 100%
+				span
+					display: flex
+					position: absolute
+					background: rgba($negro ,0.7)
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					padding: 0 50px
+					@extend %animacion-suave
+					h3
+						color: $blanco
+						text-align: center
+						@extend %open-bold
+						font-size: 26px
+						padding-top: 20px
+						padding-bottom: 10px
+						@extend %animacion-suave
+					p 
+						color: $blanco
+						text-align: center
+						@extend %open-light
+						font-size: 20px
+						@extend %animacion-suave
+					.red
+						opacity: 0
+						display: none
+	.promociones
+		background: $gris
+		padding-bottom: 80px
+		h1
+			font-size: 32px
+			text-align: center
+			color: $negro
+			@extend %eth
+			padding-top: 60px
+			padding-bottom: 20px
+			@media(max-width: 768px)
+				font-size: 30px
+		h2
+			font-size: 40px
+			text-align: center
+			color: $negro
+			@extend %eth
+			padding-bottom: 40px
+			@media(max-width: 768px)
+				font-size: 30px
+			span
+				color: $rojo
+		.cont-1170
+			display: flex
+			justify-content: space-between
+			position: relative
+			li
+				display: flex
+				justify-content: center
+			.owl-nav
+				display: block
+				@media(max-width: 800px)
+					display: none
+				.owl-prev
+					position: absolute
+					top: 40%
+					left: -38px
+					font-size: 38px
+				.owl-next
+					position: absolute
+					top: 40%
+					right: -38px
+					font-size: 38px
+			.box
+				display: flex
+				max-width: 360px
+				flex-direction: column
+				width: 100%
+				text-decoration: none
+				&:hover
+					p
+						background: $rojo
+					img
+						filter: contrast(1.2) saturate(1.35)
+				p
+					background: $negro
+					padding: 13px 19px
+					@extend %animacion-suave
+					color: $blanco
+					font-size: 24px
+					@extend %bebas
+					text-transform: uppercase
+	.donde-estamos
+		background: $blanco
+		// padding-bottom: 80px
+		position: relative
+		z-index: 2
+		h1
+			font-size: 36px
+			text-align: center
+			color: $negro
+			@extend %eth
+			padding-bottom: 80px
+			padding-top: 90px
+			@media(max-width: 768px)
+				font-size: 28px

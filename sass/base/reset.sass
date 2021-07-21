@@ -1,0 +1,257 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  ::-webkit-scrollbar
+    width: 10px
+  ::-webkit-scrollbar-track
+    background: #fff
+  ::-webkit-scrollbar-thumb
+    -webkit-border-radius: 1px
+    background: #000
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2)
+html
+  // overflow: hidden
+main
+  // overflow-x: hidden
+  // margin-top: 76px
+  // @media(max-width: 480px)
+  //   margin-top: 69px
+ul
+  list-style: none
+a
+  text-decoration: none
+  &:hover, &:focus
+    text-decoration: none
+  @extend %animacion-suave
+
+.clear 
+  clear: both
+
+/* Animación suave */
+%animacion-suave 
+  -webkit-transition: all .35s ease-in-out
+  -moz-transition: all .35s ease-in-out
+  -o-transition: all .35s ease-in-out
+  -ms-transition: all .35s ease-in-out
+  transition: all .35s ease-in-out
+
+%animacion-nav
+  -webkit-transition: all .55s ease-in-out
+  -moz-transition: all .55s ease-in-out
+  -o-transition: all .55s ease-in-out
+  -ms-transition: all .55s ease-in-out
+  transition: all .55s ease-in-out
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+// Placeholder Color
+
+@mixin placeholder-color($color) 
+  &::-webkit-input-placeholder  /* WebKit browsers */
+      color: $color  
+  &:-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+      color: $color  
+  &::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color: $color  
+  &:-ms-input-placeholder  /* Internet Explorer 10+ */
+      color: $color  
+
+      /* Animación suave */
+
+/*Oculta las slides de más mientras carga el JS*/
+.owl-carousel 
+  display: block
+.owl-carousel li:not(:first-child) 
+  display: none
+.owl-carousel.owl-loaded li:not(:first-child) 
+  display: block
+
+div[class^='cont-'], div[class*=' cont-']
+  width: 100% 
+  margin: 0 auto
+  padding: 0  15px
+
+.cont-1300 
+  max-width:  1300px 
+.cont-1170 
+  max-width:  1170px 
+.cont-990 
+  max-width:  990px 
+.cont-975 
+  max-width:  975px 
+.cont-768 
+  max-width:  768px 
+.cont-550 
+  max-width:  550px 
+
+// Mixin de contenedores de anchos especificos (wrappers)
+@mixin cont($ancho)
+  .cont-#{$ancho}
+    max-width: $ancho
+
+// Espaciado entre sections
+
+.banda
+  padding: 60px 0
+  @media(max-width: 550px)
+    padding: 30px 0
+  @media(max-width: 320px)
+    padding: 20px 0
+
+// Columna de texto doble  
+.col-doble-texto 
+  -moz-column-count: 2;
+  -webkit-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 46px;
+  column-gap: 46px;
+  display: block
+  @media (max-width: 700px)
+    -moz-column-count: 1;
+    -webkit-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+@keyframes logo
+  from
+    transform: scale(1.2)
+  50% 
+    transform: scale(1)
+  to 
+    transform: scale(1.2)
+// @keyframes loading
+//   0%
+//     opacity: 1
+//   100% 
+//     opacity: 0
+    
+@keyframes animateStroke
+  to
+    stroke-dashoffset: 0
+    fill: #000
+
+@keyframes animateSlade
+  to
+    left: 50%
+.loading
+    width: 100%
+    height: 100vh
+    background-color: #000
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    z-index: 9999999
+    position: fixed
+    left: 0px
+    top: 0px
+    // animation: loading 5s
+    svg
+      width: 320px
+      transform: translate(-50%, -50%)
+      animation: animateSlade 1.2s linear forwards
+      position: absolute
+      left: 50%
+      top: 50%
+.logo-path
+    fill: rgba(255, 255, 255, 0)
+    stroke: #fff
+    stroke-dashoffset: 1000
+    stroke-dasharray: 1000
+    animation: animateStroke 2s infinite
+    .logo-none
+      display: none
+.logo-footer
+    fill: rgba(255, 255, 255, 0)
+    stroke: #fff
+    stroke-dashoffset: 1000
+    stroke-dasharray: 1000
+    animation: animateStroke 8s infinite
+.menu--shylock .menu__link 
+  position: relative
+  // margin: 0 1em
+  padding-right: 0
+  padding-left: 0
+  color: #ED1C24
+  -webkit-transition: color 0.4s
+  transition: color 0.4s
+
+.menu--shylock .menu__item--current .menu__link,
+.menu--shylock .menu__item--current .menu__link:hover,
+.menu--shylock .menu__item--current .menu__link:focus 
+  color: #d94f5c
+
+.menu--shylock .menu__item--current .menu__link::after,
+.menu--shylock .menu__item--current .menu__link::before 
+  -webkit-transform: scale3d(1, 1, 1)
+  transform: scale3d(1, 1, 1)
+
+.menu--shylock .menu__item--current .menu__link::before 
+  -webkit-transition-delay: 0s
+  transition-delay: 0s
+
+.menu--shylock .menu__link:hover,
+.menu--shylock .menu__link:focus 
+  color: #ED1C24
+  padding-bottom: 5px
+
+.menu--shylock .menu__link:hover::before,
+.menu--shylock .menu__link:focus::before 
+  -webkit-transform: scale3d(1, 1, 1)
+  transform: scale3d(1, 1, 1)
+  -webkit-transition-delay: 0s
+  transition-delay: 0s
+
+.menu--shylock .menu__link::before,
+.menu--shylock .menu__link::after 
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 3px
+  -webkit-transform: scale3d(0, 1, 1)
+  transform: scale3d(0, 1, 1)
+  -webkit-transform-origin: center left
+  transform-origin: center left
+  -webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1)
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1)
+.menu--shylock .menu__link::before 
+  background: #ED1C24
+  -webkit-transition-delay: 0.4s
+  transition-delay: 0.4s
+.menu--shylock .menu__link::after 
+  background: #d94f5c
+  padding-bottom: 5px
+// Columna de texto doble  
+.mfp-zoom-in 
+  /* start state */
+  .mfp-with-anim 
+    opacity: 0
+    transition: all 0.3s ease-in-out
+    transform: scale(0.8)
+    transform: translateY(100px)
+  &.mfp-bg 
+    opacity: 0
+    transition: all 0.3s ease-out  
+  /* animate in */
+  &.mfp-ready 
+    .mfp-with-anim 
+      opacity: 1
+      transform: scale(1)   
+    &.mfp-bg 
+      opacity: 0.8  
+  /* animate out */
+  &.mfp-removing     
+    .mfp-with-anim 
+      transform: scale(0.8)
+      opacity: 0    
+    &.mfp-bg 
+      opacity: 0

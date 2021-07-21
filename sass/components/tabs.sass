@@ -1,0 +1,35 @@
+.tabs
+  font-size: 0
+.tabs-body div.tabs-panel
+  overflow: auto
+  display: none
+.tabs-body div.tabs-panel-selected
+  display: block
+  overflow: visible
+
+.tab-nav-container
+  position: relative
+  vertical-align: top
+  font-size: 20px
+  color: #000
+  .tab-nav
+    cursor: pointer
+    vertical-align: top
+    position: relative
+    -webkit-transition: all .20s ease-in-out
+    -moz-transition:  all .20s ease-in-out
+    -o-transition:    all .20s ease-in-out
+    -ms-transition:   all .20s ease-in-out
+    transition:     all .20s ease-in-out
+
+.tab-container
+  vertical-align: top
+  font-size: 20px
+  color: #000
+.mi-cursor
+  cursor: url('../images/footer/logo_synapsis.png')
+
+@media (min-width: 992px)
+  /*Oculta las tabs de más mientras carga el JS*/
+  .tab-content:not(:first-child) 
+    display: none

@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteBase /errores/404/
+
+# Resuelvo como archivo .php las URL sin extensión
+RewriteRule ^([^/.]+)$ $1.php [QSA,L]

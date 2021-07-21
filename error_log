@@ -1,0 +1,11 @@
+[13-Jul-2021 18:52:40 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected 'portadas' (T_STRING), expecting ',' or ';' in /home/tintsandgraphics/public_html/includes/portadas.php on line 24
+[13-Jul-2021 18:53:14 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected 'portadas' (T_STRING), expecting ',' or ';' in /home/tintsandgraphics/public_html/includes/portadas.php on line 24
+[13-Jul-2021 18:53:20 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:53:25 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:53:38 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:53:39 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:53:57 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:54:04 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:54:15 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:54:18 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67
+[13-Jul-2021 18:54:23 America/Argentina/Buenos_Aires] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/tintsandgraphics/public_html/api/idiomas/es.php on line 67

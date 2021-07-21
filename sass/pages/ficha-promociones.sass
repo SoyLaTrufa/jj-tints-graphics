@@ -1,0 +1,112 @@
+.s_ficha-promociones
+	.promociones
+		background: $blanco
+		padding-bottom: 80px
+		padding-top: 80px
+		.cont-1300
+			display: flex
+			justify-content: space-between
+			padding-bottom: 50px
+			@media(max-width: 800px)
+				flex-direction: column
+			.left
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				width: 65%
+				@media(max-width: 800px)
+					width: 100%
+				img
+					width: 100%
+				.texto
+					h1
+						@extend %eth
+						font-size: 30px
+						color: $negro
+						padding-top: 30px
+					p
+						font-size: 20px
+						line-height: 24px
+						padding: 10px 0
+				.rrss
+					padding-top: 40px
+					padding-bottom: 40px
+					span
+						font-weight: bold
+						color: $negro
+					a
+						text-decoration: none
+						color: $rojo
+						font-size: 22px
+						padding: 0 5px
+						@extend %animacion-suave
+						&:hover
+							color: $negro
+			.right
+				width: 30%
+				display: flex
+				flex-direction: column
+				@media(max-width: 800px)
+					width: 100%
+				.box
+					background: #e5e5e5
+					margin-bottom: 20px
+					text-decoration: none
+					&:hover
+						background: $gris
+						img
+							filter: contrast(1.2) saturate(1.35)
+					h2
+						@extend %eth
+						font-size: 20px
+						color: $negro
+						padding-top: 30px
+						padding-left: 20px 
+						padding-right: 20px
+					p
+						font-size: 16px
+						line-height: 24px
+						color: $negro
+						padding: 10px 0
+						padding-left: 20px 
+						padding-right: 20px
+					img
+						width: 100%
+						@extend %animacion-suave
+		.f
+			flex-direction: row !important
+			span
+				font-weight: bold
+				color: $negro
+			a
+				text-decoration: none
+				color: $rojo
+				padding-left: 6px
+				font-size: 20px
+				@media(max-width: 800px)
+					font-size: 16px
+				&:hover
+					i
+						padding-right: 10px
+				i
+					color: $rojo
+					font-size: 20px
+					padding-right: 5px
+					@extend %animacion-suave
+					font-weight: bold
+					@media(max-width: 800px)
+						font-size: 16px
+	.banda-roja
+		padding: 70px 0
+		background: $rojo
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		z-index: 3
+		h2
+			color: $blanco
+			@extend %bebas
+			padding-top: 10px
+			text-transform: uppercase
+			font-size: 24px

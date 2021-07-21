@@ -1,0 +1,218 @@
+footer
+	background: #070707
+	padding: 80px 0
+	position: relative
+	.raya
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 50px
+		z-index: 1
+		@media(max-width: 1600px)
+			width: 40px
+		@media(max-width: 1366px)
+			width: 25px
+		@media(max-width: 768px)
+			z-index: -1
+	.rayas
+		position: absolute
+		top: -187px
+		z-index: 1
+		right: 0
+		width: 50px
+		transform: rotate(180deg)
+		@media(max-width: 1600px)
+			width: 40px
+		@media(max-width: 1366px)
+			width: 25px
+			top: -22px
+	.cont-1300
+		display: flex
+		justify-content: space-between
+		@media(max-width: 768px)
+			flex-direction: column
+		.left
+			width: 40%
+			z-index: 999
+			@media(max-width: 768px)
+				width: 100%
+			p
+				color: #fff
+				font-size: 16px
+				padding-top: 30px
+				padding-bottom: 20px
+			.tels
+				color: $blanco
+				font-size: 20px
+				display: flex
+				align-items: center
+				padding-bottom: 10px
+				i
+					color: $rojo
+					font-size: 20px
+					padding-right: 10px
+				a
+					text-decoration: none
+					color: $blanco
+					font-size: 20px
+					margin: 0 5px
+					@extend %animacion-suave
+					&:hover
+						color: $rojo
+			.mail
+				display: flex
+				align-items: center
+				text-decoration: none
+				color: $blanco
+				font-size: 20px
+				@extend %animacion-suave
+				&:hover
+					color: $rojo
+				i
+					color: $rojo
+					font-size: 20px
+					padding-right: 10px
+			.rrss
+				display: flex
+				margin-top: 50px
+				align-items: center
+				@media(max-width: 768px)
+					justify-content: center
+					padding-bottom: 40px
+				a
+					background: $blanco
+					color: $negro
+					border-radius: 50%
+					margin: 0 10px
+					height: 35px
+					width: 35px
+					display: flex
+					justify-content: center
+					align-items: center
+					@extend %animacion-suave
+					&:hover
+						background: $rojo
+						color: $blanco
+					i
+						font-size: 18px
+		.right
+			display: flex
+			flex-direction: column
+			width: 60%
+			align-items: center
+			@media(max-width: 768px)
+				width: 100%
+			h1
+				@extend %eth
+				color: $blanco
+				text-transform: uppercase
+				position: relative
+				// padding-bottom: 30px
+				font-size: 28px
+				@media(max-width: 768px)
+					font-size: 22px
+					padding-bottom: 15px
+				&::after
+					content: ''
+					position: absolute
+					left: -90px
+					top: 50%
+					background: $rojo
+					height: 2px
+					width: 80px
+					@media(max-width: 768px)
+						width: 40px
+						display: none
+				&::before
+					content: ''
+					position: absolute
+					left: 295px
+					top: 50%
+					background: $rojo
+					height: 2px
+					width: 80px
+					@media(max-width: 768px)
+						width: 40px
+						display: none
+			form
+				width: 100%
+				padding: 30px 110px
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				@media(max-width: 768px)
+					padding: 0
+				.mod
+					width: 100%
+					.content-form
+						width: 100%
+						input
+							width: 100%
+							background: transparent
+							border: 1px solid $gris
+							height: 40px
+							margin-bottom: 15px
+							padding-left: 10px
+							color: $blanco
+							font-size: 16px
+							padding-top: 3px
+							outline: $rojo
+							&::placeholder
+								color: $blanco
+						textarea
+							width: 100%
+							padding-left: 10px
+							padding-top: 10px
+							background: transparent
+							border: 1px solid $gris
+							height: 80px
+							margin-bottom: 15px
+							color: $blanco
+							font-size: 16px
+							outline: $rojo
+							&::placeholder
+								color: $blanco
+				button
+					background: $rojo
+					color: $blanco
+					border: none
+					cursor: pointer
+					padding: 8px 35px
+					border:  1px solid $rojo
+					@extend %animacion-suave
+					@media(max-width: 500px)
+						width: 100%
+						margin-bottom: 50px
+					&:hover
+						background: transparent
+						color: $blanco
+						border:  1px solid $blanco
+.pie
+	padding: 40px 0
+	.cont-1300
+		align-items: center
+		.copy
+			margin-top: 60px
+			font-size: 12px
+		.rrss
+			display: flex
+			align-items: center
+			@media(max-width: 768px)
+				justify-content: center
+				padding-bottom: 40px
+			a
+				background: $blanco
+				color: $negro
+				border-radius: 50%
+				margin: 0 10px
+				height: 35px
+				width: 35px
+				display: flex
+				justify-content: center
+				align-items: center
+				@extend %animacion-suave
+				&:hover
+					background: $rojo
+					color: $blanco
+				i
+					font-size: 18px

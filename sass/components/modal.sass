@@ -1,0 +1,155 @@
+// POPUP
+.popup-overlay 
+  background: rgba(0,0,0,0.6)
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 9999
+  display: block
+
+.contenedor-popup2
+  position: relative
+
+
+.popup-overlay .cerrar
+  position: absolute
+  top: -55px
+  right: 10px
+  width: 25px
+
+.popup-overlay .cerrar:hover
+  cursor: pointer
+
+
+.popup
+  z-index: 999999
+  background: white
+  max-width: 700px
+  width: 100%
+  max-height:  450px
+  height: 100%
+  padding: 25px 0 0
+  margin: 17% auto
+  display: block
+  animation-name: popup
+  animation-duration: 2s
+  /*animation-delay: 2s*/
+
+@keyframes popup 
+  from 
+  	margin: 0 auto
+  to 
+  	margin: 16% auto
+
+
+@media(max-width: 1040px)
+  .popup
+    width: 85%
+  
+
+
+.popup .popup-logo
+  margin: auto
+  text-align: center
+
+.popup .popup-logo img
+  max-width: 200px
+  width: 100%
+
+.popup .popup-titulo
+  margin: auto
+  text-align: center
+
+.popup .popup-titulo h1
+  font-size: 40px
+  line-height: 48px
+  padding: 0 10px
+  text-shadow: inherit
+
+.popup .popup-titulo h3
+  font-size: 24px
+  line-height: 32px
+  margin-top: 0
+  padding: 0 10px 30px
+
+.popup .popup-contacto
+  margin: auto
+  text-align: center
+  background-color: #b21424
+
+.popup .dire
+  position: relative
+  width: 49%
+  display: inline-block
+  text-align: left
+  padding: 25px 0 15px 50px
+
+.popup .dire p, .popup .tel p
+  font-family: montserratRegular
+  color: #fff
+  font-size: 18px
+  line-height: 24px
+  padding-left: 35px
+
+
+.popup .tel
+  position: relative
+  width: 49%
+  display: inline-block
+  vertical-align: top
+  text-align: left
+  padding: 25px 10px 0 50px
+
+.popup .tel p
+  margin-bottom: 5px
+
+.popup i
+  position: absolute
+  top: 25px
+  color: #fff
+  font-size: 28px
+
+
+@media(max-width: 760px)
+  .popup
+    height: 60%
+  
+
+@media(max-width: 700px)
+  .popup .dire, 
+  .popup .tel
+    display: block
+    width: 100%
+  
+  .popup .tel
+    padding-bottom: 25px
+  
+  .popup
+    margin: 30% auto
+  
+
+@media(max-width: 500px)
+  .popup
+    margin: 30% auto
+    height: 490px
+    overflow-y: scroll
+  
+.popup .popup-titulo h1
+  font-size: 24px
+  line-height: 36px
+
+.popup .popup-titulo h3
+  font-size: 21px
+  line-height: 28px
+
+.popup .dire, .popup .tel
+  padding-left: 10px
+  
+
+
+
+.open-popup-1,
+.open-popup2
+  cursor: pointer

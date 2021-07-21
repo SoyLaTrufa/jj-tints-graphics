@@ -1,0 +1,63 @@
+.login-wrapper .cont-1170{
+    height: calc(100vh - 30px);
+}
+
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='titulo']{
+    width: 250px;
+    padding-left: 10px;
+}
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='nombre']{
+    width: 250px;
+    padding-left: 10px;
+}
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='rating']{
+    width: 90px;
+    padding-left: 10px;
+}
+.s_cms .wrap-logueado #content #box form fieldset .campos select[name='servicios[]']{
+    height: 115px !important;
+}
+
+#fancybox-wrap{
+    left: 15% !important;
+    top: 10% !important;
+    background: #fff;
+    width: 985px !important;
+}
+#fancybox-content{
+    background: #fff !important;
+    width: 950px !important;
+}
+#fancybox-content .boton{
+    background: #002349 !important;
+    color: #fff !important;
+    padding: 8px 25px !important;
+    cursor: pointer !important;
+}
+
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='foto_id'],
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='foto_2_id'],
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='foto_3_id'],
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='foto_4_id'],
+.s_cms .wrap-logueado #content .list tbody .item td[data-key='foto_5_id'] {
+    width: 120px;
+    text-align: center;
+}
+
+.s_cms .wrap-logueado #content img{
+    margin-left: 0;
+}
+
+.s_cms .wrap-logueado #content .dashboard li .botones .btn-disabled{
+    background: grey !important;
+    cursor: default !important;
+}
+.s_cms .wrap-logueado #content .dashboard li .botones .btn-disabled:hover{
+    background: grey !important;
+    color: #252a30 !important;
+}
+
+#gallery_galeria li{
+    display: inline-block;
+    margin: 0 10px;
+}

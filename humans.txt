@@ -1,0 +1,13 @@
+﻿
+/* EQUIPO */
+	Front-End: Anthony Mas y Rubi
+		Email:  anthoni97@gmail.com
+	Back-End: Mariano Alvarez Hayes
+		Email:  mariano@laboratorioweb.com.ar
+	Ubicación: Capital Federal, Argentina.
+
+
+/* SITIO */
+	Estándares: HTML5, CSS3, Sass
+	Componentes: jQuery
+	Software: H5BP, Twitter Boostrap, CodeIgniter

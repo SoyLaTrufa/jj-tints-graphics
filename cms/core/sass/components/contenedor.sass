@@ -1,0 +1,181 @@
+.s_cms
+	#wrapper
+		// margin-top: 35px
+		background: $gris
+		height: calc(100vh - 54px)
+		overflow: auto
+	.wrap-logueado
+		width: calc(100% - 400px)
+		margin-left: 400px
+		padding: 15px
+		position: relative
+		@extend %animacion-suave
+		&.activo
+			width: calc(100% - 50px)
+			margin-left: 50px
+		@media(max-width: 1400px)
+			width: calc(100% - 300px)
+			margin-left: 300px
+		@media(max-width: 460px)
+			width: calc(100% - 50px)
+			margin-left: 50px
+		#content
+			padding: 20px 0
+			@media(max-width: 460px)
+				padding: 0
+			.border-bottom
+				margin-bottom: 30px
+				.filtro
+					width: 100%
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					@media(max-width: 460px)
+						align-items: flex-end
+					fieldset
+						border: none
+						&:not(:nth-child(2))
+							margin-left: 50px
+						@media(max-width: 460px)
+							width: 200px
+						label
+							font-size: 22px
+							line-height: 24px
+							font-weight: 700
+							margin-right: 30px
+						input
+							height: 45px
+							width: 300px
+							padding-left: 10px
+							font-size: 21px
+							outline: none
+							border: none
+							@media(max-width: 460px)
+								width: 200px
+								height: 30px
+					button
+						box-shadow: none
+						border: none
+						background: $blanco
+						color: $negro
+						padding: 4px 10px 4px 0
+						font-size: 27px
+						cursor: pointer
+						@extend %animacion-suave
+						&:hover
+							color: $verde
+						@media(max-width: 460px)
+							padding: 4px 5px 0 0
+							font-size: 19px
+					.clean
+						margin-left: 15px
+						background: transparent
+						a
+							color: $gris-dark
+						&:hover
+							background: $gris-dark
+							a
+								color: $blanco
+			.top-table
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				margin-bottom: 15px
+				h1
+					padding: 15px 0
+					font-size: 24px
+					display: inline-block
+					@media(max-width: 460px)
+						font-size: 18px
+				.lista_acciones-gral
+					// padding-left: 25px
+					input[type=button],
+					.boton-csv
+						box-shadow: none
+						background: $verde
+						border: solid 1px $verde
+						color: $negro
+						font-size: 16px
+						padding: 5px 16px
+						font-weight: 700
+						text-transform: uppercase
+						cursor: pointer
+						@extend %animacion-suave
+						&:hover
+							color: $verde
+							background: $negro
+					.boton-csv
+						background: $gris-dark
+						border: solid 1px $gris-dark
+			.list
+				min-width: 991px
+				margin-bottom: 30px
+				thead
+					background-color: $black
+					tr
+						th
+							a
+								color: $blanco
+								display: block
+								padding: 4px 0
+							i
+								color: $blanco
+								transform: rotate(90deg)
+				tbody
+					.item
+						border-bottom: solid 1px $verde
+						td
+							padding: 5px 0
+						td[data-key='activa']
+							width: 75px
+							text-align: center
+							a
+								i
+									color: $black
+						td[data-key='fecha']
+							width: 115px
+							text-align: center
+						td[data-key='foto_id']
+							width: 70px
+							text-align: center
+						td[data-key='titulo']
+							padding-left: 4px
+							width: 150px
+						td[data-key='color']
+							padding-left: 4px
+							width: 150px
+						.js-orden
+							width: 25px
+							text-align: center
+							cursor: pointer
+							i
+								color: grey
+								font-size: 10px
+						.bottons
+							width: 100px
+							text-align: center
+							a
+								display: inline-block
+								vertical-align: middle
+								margin: 0 5px
+								.fa-pencil-square-o
+									color: $black
+								.a-trash-alt
+									color: $rojo
+			.pager
+				width: 100%
+				margin-top: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					background: $violeta
+					padding: 2px 8px
+					border-radius: 3px
+					color: $blanco
+					margin: 0 3px
+				.actual
+					background: $violeta-dark
+	.login-wrapper
+		form
+			background: $blanco

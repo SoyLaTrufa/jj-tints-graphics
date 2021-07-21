@@ -1,0 +1,66 @@
+.s_cms
+	.wrap-logueado
+		#content
+			img
+				margin-left: 25px
+			h1
+				text-transform: uppercase
+				color: $negro
+				font-size: 20px
+				line-height: 24px
+				margin-bottom: 20px
+				margin-left: 25px
+				font-weight: 600
+				display: inline-block
+				vertical-align: super
+				span
+					font-weight: 700
+			.dashboard
+				width: 100%
+				display: flex
+				justify-content: flex-start
+				align-items: flex-start
+				flex-wrap: wrap
+				li
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: center
+					list-style: none
+					width: 280px
+					height: 280px
+					margin: 25px
+					padding-top: 30px
+					background: $blanco
+					box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.45)
+					@media(max-width: 1400px)
+						width: 260px
+						height: 260px
+					h4
+						text-transform: uppercase
+						font-weight: 700
+						font-size: 20px
+					span
+						font-weight: 700
+						font-size: 65px
+					.botones
+						font-size: 0
+						width: 100%
+						a
+							display: inline-block
+							vertical-align: top
+							width: 50%
+							padding: 12px 0
+							font-size: 16px
+							text-align: center
+							background: $negro
+							color: $blanco
+							font-weight: 700
+							text-transform: uppercase
+							&:last-child
+								color: $negro
+								background: $verde
+							&:hover
+								background: $verde-dark
+								&:last-child
+									color: $blanco
